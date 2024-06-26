@@ -1,23 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    float a, b;
+    int a, b;
 
     printf("Enter two numbers: ");
-    scanf("%f %f", &a, &b);
+    scanf("%d %d", &a, &b);
 
     switch ((a > b)-( b > a)) {
         case 1:
-            printf("Maximum is %f \n", a);
+            printf("Maximum is %d \n", a);
             break;
         case 0:
-            printf("Maximum is %f \n", b);
+            printf("Maximum is %d \n", b);
             break;
         case -1:
             printf("The numbers are equal ");
             break;
             
         }
-
-
 }
